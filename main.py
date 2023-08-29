@@ -176,6 +176,8 @@ def mass_report():
             report_type = 9018
         elif report_types["Human Exploitation"] == "y" or report_types["Human Exploitation"] == "yes":
             report_type = 90015
+        elif report_types["Under Age"] == "y" or report_types["Under Age"] == "yes":
+            report_type = 91015
     
     output_lock = threading.Lock()
     headers = {
